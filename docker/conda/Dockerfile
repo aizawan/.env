@@ -35,8 +35,8 @@ RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-la
 ENV PATH /opt/conda/bin:$PATH
 
 ADD .tmux.conf /root/.tmux.conf
-ADD aliases.zsh /root/.oh-my-zsh/custom/aliases.zsh
 ADD .vimrc /root/.vimrc
+ADD ./docker/conda/aliases.zsh /root/.oh-my-zsh/custom/aliases.zsh
 
 WORKDIR /workspace
 

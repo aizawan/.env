@@ -19,7 +19,7 @@ $ dcr
 Dockerfile for machine learning.
 1. Build docker image.
 ```
-$ docker build -t ubuntu.base -f ${PWD}/docker/conda/Dockerfile .
+$ docker build -t ubuntu.conda -f ${PWD}/docker/conda/Dockerfile .
 ```
 2. Run a container.
 ```

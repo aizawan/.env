@@ -23,6 +23,7 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
 
 # Add configuration files
 ADD .tmux.conf /root/.tmux.conf
+ADD .vimrc /root/.vimrc
 
 WORKDIR /workspace
 
