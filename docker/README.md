@@ -29,3 +29,18 @@ $ docker run -it --rm -v ${PWD}:/workspace ubuntu.conda:latest /bin/zsh
 ```
 $ dcrml
 ```
+
+# Pytorch
+Dockerfile for Pytorch
+1. Build docker image.
+```
+$ docker build -t ubuntu.pth -f ${PWD}/docker/pth/Dockerfile .
+```
+2. Run a container.
+```
+$ docker run -it --rm -v ${PWD}:/workspace ubuntu.pth:latest /bin/zsh
+```
+- (Option) You can run a container from an alias.
+```
+$ dcrpth
+```
