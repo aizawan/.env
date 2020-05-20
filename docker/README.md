@@ -15,7 +15,7 @@ $ docker run -it --rm -v ${PWD}:/workspace ubuntu.base:latest /bin/zsh
 $ dcr
 ```
 
-# conda
+## conda
 Dockerfile for machine learning.
 1. Build docker image.
 ```
@@ -30,7 +30,7 @@ $ docker run -it --rm -v ${PWD}:/workspace ubuntu.conda:latest /bin/zsh
 $ dcrml
 ```
 
-# Pytorch
+## Pytorch
 Dockerfile for Pytorch
 1. Build docker image.
 ```

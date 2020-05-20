@@ -22,3 +22,8 @@ Dotfiles for Linux and macOS.
   ```:bash
   $ dcrjupy
   ```
+
+- Commands for if you use a jupyter notebook.
+  ```:bash
+  $ dcrpth
+  ```
