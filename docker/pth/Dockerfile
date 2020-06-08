@@ -40,6 +40,10 @@ RUN conda install -c conda-forge jupyterlab
 # Pytorch
 RUN conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
+# Tensorboard
+RUN conda install tensorboard
+EXPOSE 6006
+
 ADD .tmux.conf /root/.tmux.conf
 ADD .vimrc /root/.vimrc
 ADD ./docker/pth/aliases.zsh /root/.oh-my-zsh/custom/aliases.zsh
