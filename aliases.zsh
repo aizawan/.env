@@ -3,3 +3,4 @@ alias dcrml='docker run -it --rm -v ${PWD}:/workspace ubuntu.conda:latest /bin/z
 alias dcrjupy='docker run -it --rm -p 8888:8888 -v ${PWD}:/workspace ubuntu.conda:latest jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 alias dcrjupylab='docker run -it --rm -p 8888:8888 -v ${PWD}:/workspace ubuntu.jupylab:latest jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 alias dcrpth='docker run -it --rm -v ${PWD}:/workspace ubuntu.pth:latest /bin/zsh'
+alias sshsupend='ssh -t home sudo systemctl suspend'

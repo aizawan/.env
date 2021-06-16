@@ -17,6 +17,7 @@ RUN apt-get update && apt-get -y upgrade \
       cmake \
       ca-certificates \
       libjpeg-dev \
+      libgl1-mesa-dev \
       libpng-dev && rm -rf /var/lib/apt/lists/*
 
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
@@ -30,7 +31,7 @@ RUN curl -o ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest
       /opt/conda/bin/conda install -y python=$PYTHON_VERSION \
             numpy pyyaml scipy ipython jupyter colorlog \
             matplotlib scikit-image h5py seaborn lmdb \
-            tqdm protobuf Pillow scikit-learn && \
+            tqdm protobuf Pillow scikit-learn opencv && \
       /opt/conda/bin/conda clean -ya
 ENV PATH /opt/conda/bin:$PATH
 
