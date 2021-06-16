@@ -3,3 +3,4 @@ alias dcrml='docker run -it --rm -v ${PWD}:/workspace ubuntu.conda:latest /bin/z
 alias dcrjupy='docker run -it --rm -p 8888:8888 -v ${PWD}:/workspace ubuntu.conda:latest jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 alias dcrjupylab='docker run -it --rm -p 8888:8888 -v ${PWD}:/workspace ubuntu.jupylab:latest jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 alias dcrpth='docker run -it --rm -v ${PWD}:/workspace ubuntu.pth:latest /bin/zsh'
+alias dcrhg='docker run -it --rm --shm-size=32G --gpus all -u `id -u`:`id -g` -v /home/aizawa/workspace:/home/aizawa/workspace -v /home/aizawa/dataset:/home/aizawa/dataset aizawa-pytorch.1.8.1-cuda11.1.1-ubuntu20.04:latest /bin/zsh' 
